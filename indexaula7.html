@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem, áudio e vídeo</title>
+</head>
+
+<body>
+
+    <h1>Vamos testar a responsividade</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Descrição da imagem">
+    </picture>
+
+   <audio preload="metadata" controls loop>
+    <source src="imagens/Below and Above - Minecraft.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <video controls>
+        <source src="imagens/videoplayback.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+</body>
+
+</html>
